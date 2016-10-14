@@ -1,0 +1,24 @@
+.align-baseline { vertical-align: baseline; }
+.align-middle { vertical-align: middle; }
+.align-top { vertical-align: top; }
+.fitted { text-align: center; white-space: nowrap; }
+.maximized { width: 99%; }
+
+.even-split {
+    @include faux-table;
+    @include spacers--vertical;
+    
+    width: 100%;
+    
+    > * > * {
+        width: 50%;
+    }
+}
+
+.faux-table {
+    @include faux-table;
+}
+
+.spacers--vertical {
+    @include spacers--vertical;
+}

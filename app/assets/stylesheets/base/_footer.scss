@@ -1,0 +1,33 @@
+.footer {
+    background-color: gray;
+    border-top: 1px solid $black;
+    color: $white;
+    padding: 2em 0;
+}
+
+.footer-link {
+    border-bottom: 2px solid gray;
+    color: $white;
+    
+    &:hover {
+        border-color: $white;
+    }
+}
+
+.footer__nav {
+    @include clearfix;
+    
+    color: $white;
+    
+    li {
+        float: left;
+        margin-left: 2em;
+    }
+    
+    ul {
+        @include clearfix;
+        
+        float: right;
+        list-style: none;
+    }
+}

@@ -1,0 +1,80 @@
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+body {
+    @include sans-serif-family;
+}
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 16px; }
+
+label {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 0.6em;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.75em;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+b, strong { font-weight: bold; }
+em, i { font-style: italic; }
+
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+
+.bulleted {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5em;
+    list-style: disc outside none;
+    padding-left: 1em;
+}
+
+.align-right { text-align: right; }
+.centered { text-align: center; }
+
+.heading { 
+    @include serif-family;
+    
+    &.-small { font-size: 24px; }
+    &.-medium { font-size: 28px; }
+    &.-large { font-size: 32px; }
+    &.-grand { font-size: 48px; }
+    &.-giant { font-size: 64px; }
+}
+
+.t-small { font-size: 16px; }
+.t-medium { font-size: 18px; }
+.t-large { font-size: 20px; }
+
+.t-empty {
+    background-color: $white-smoke;
+    border: 1px dashed $nobel;
+    color: $nobel;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a, span { &.underlined { text-decoration: underline; } }
+h1, h2, h3, h4, h5, h6 { 
+    &.underlined { 
+        border-bottom: 1px solid black;
+        padding-bottom: 4px; 
+        width: 100%; 
+    } 
+}

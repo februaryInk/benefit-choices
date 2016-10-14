@@ -1,0 +1,29 @@
+.banner {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.map-container {
+    height: 30em;
+    width: 100%;
+}
+
+.page-content {
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+.panel {
+    background-color: $white;
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+#map-canvas {
+    height: 100%;
+    width: 100%;
+}

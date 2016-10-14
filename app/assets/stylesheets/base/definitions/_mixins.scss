@@ -1,0 +1,88 @@
+@mixin accent-family {
+  font-family: Kalam, cursive;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin color-band( $background-color, $min-width ) {
+  background-color: $background-color;
+  display: block;
+  min-width: $min-width;
+  width: 100%;
+}
+
+@mixin faux-table {
+  border-collapse: collapse;
+  display: table;
+  
+  & > * {
+    display: table-row;
+    width: 100%;
+    
+    & > * {
+      display: table-cell;
+    }
+  }
+}
+
+@mixin overflow-clear {
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+@mixin sans-serif-family {
+  font-family: Candara, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Candara ff', Ubuntu, sans-serif;
+}
+
+@mixin serif-family {
+  font-family: 'Fontin', Impact, serif;
+}
+
+@mixin spacers--horizontal {
+  & > * {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  
+  & > *:first-child {
+    padding-top: 0;
+  }
+  
+  & > *:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@mixin spacers--vertical {
+  & > * {
+  
+    & > * {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    
+    & > *:first-child {
+      padding-left: 0;
+    }
+    
+    & > *:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+@mixin vertically-center {
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}

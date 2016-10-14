@@ -1,0 +1,18 @@
+%script
+  :plain
+    $(document).ready(function() {
+      setMap('Coopersville, MI');
+    });
+    
+    $(document).on('page:load', function() {
+      setMap('Coopersville, MI');
+    });
+.page-content.padding-b0
+  .grid-container
+    .grid-100
+      %h1.heading.-large
+        Our Service Area
+      %p
+        Our base of operations is located in Grand Rapids. We serve the surrounding area of West Michigan.
+  .map-container
+    #map-canvas

@@ -1,0 +1,23 @@
+%head
+  = stylesheet_link_tag 'mailer.css'
+%body
+  %table.body
+    %tbody
+      %tr
+        %td
+          %table.header
+            %tbody
+              %tr
+                %td
+                  = image_tag 'logo.png', alt: 'Widespread Landscaping', class: 'logo', height: '100', width: '100'
+          %table.container
+            %tbody
+              %tr
+                %td
+                  = yield
+          %table.footer
+            %tbody
+              %tr
+                %td
+                  %p.license
+                    = "Copyright #{Time.now.year} Widespread Landscaping. All Rights Reserved.".html_safe
