@@ -1,5 +1,25 @@
 .page-content
-  .grid-container
-    .grid-100
-      %h1.centered.heading.-large
-        Our Services
+  %section
+    .grid-container
+      .grid-40
+        %h1.heading.-large
+          Finding the right health insurance coverage for your needs.
+        %p
+          Here at Benefit Choices, we offer our guidance in matching your individual or company requirements with the insurance plans that will work best for you. Our experienced insurance professionals are available to help you find solutions that meet your unique needs.
+      .grid-60
+        = image_tag asset_path( 'country-road.jpg' ), :alt => 'Country Road', :class => 'full-width'
+  %section.colored
+  %section.padding-b3.padding-t3
+    .grid-container
+      .grid-33
+        = link_to 'About Us', '#', :class => 'button -bright'
+        %p
+          It is our goal to educate our clients about the best insurance options available to them and guide them to the solution that is right for their situation. For more information about Benefit Choices, see our About Us page.
+      .grid-33
+        = link_to 'Products', '#', :class => 'button -bright'
+        %p
+          We are always looking to get our clients the best product and services for the best price. If you are interested in the benefits that we provide, then head on over to our Products page, where you can learn about the direct and payroll products that we offer.
+      .grid-33
+        = link_to 'Claims', '#', :class => 'button -bright'
+        %p
+          Are you a Benefit Choices client and need to file an insurance claim? Our Claims page has what you need. We provide forms for accident, cancer, disability, ICU, and sickness.

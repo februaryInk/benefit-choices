@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+.colored {
+    @include herringbone( 0.25 );
+    
+    padding: 5em 0;
+}
+
 .map-container {
     height: 30em;
     width: 100%;
@@ -26,4 +32,8 @@
 #map-canvas {
     height: 100%;
     width: 100%;
+}
+
+#page-wrapper {
+    flex: 1;
 }

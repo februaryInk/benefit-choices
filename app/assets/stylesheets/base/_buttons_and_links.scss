@@ -13,15 +13,15 @@
     white-space: nowrap;
     
     &.-bright {
-        background-color: $maximum-blue;
+        background-color: $tawny;
         color: $white;
         padding-left: 1.5em;
         padding-right: 1.5em;
         
         &.-inverse {
             background-color: $white;
-            border: 1px solid $maximum-blue;
-            color: $maximum-blue;
+            border: 1px solid $tawny;
+            color: $tawny;
         }
     }
     

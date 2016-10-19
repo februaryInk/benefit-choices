@@ -55,7 +55,11 @@ em, i { font-style: italic; }
     &.-large { font-size: 32px; }
     &.-grand { font-size: 48px; }
     &.-giant { font-size: 64px; }
+    
+    &.-signature { @include signature-family; font-weight: bold; }
 }
+
+.nowrap { white-space: nowrap; }
 
 .t-small { font-size: 16px; }
 .t-medium { font-size: 18px; }

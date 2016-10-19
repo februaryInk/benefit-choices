@@ -1,8 +1,9 @@
 header {
-    background-color: gray;
+    @include textured( 0.40 );
+    
+    background-color: $dark-cerulean;
+    border-bottom: 1px solid darken( $dark-cerulean, 20% );
     color: $white;
-    padding-bottom: 1em;
-    padding-top: 1em;
     width: 100%;
 }
 
@@ -11,7 +12,7 @@ header {
     color: $white;
     display: inline-block;
     font-size: 1.125em;
-    padding: 0.75em;
+    padding: 0.75em 0;
     
     &:hover {
         background-color: gray;
@@ -30,7 +31,7 @@ header {
     li {
         display: block;
         float: left;
-        margin-left: 1em;
+        margin-left: 2em;
     }
     
     ul {
@@ -45,4 +46,9 @@ header {
 
 .header__title {
     float: left;
+}
+
+.header__wrapper {
+    border-bottom: 2px solid lighten( $dark-cerulean, 10% );
+    padding: 1em 0;
 }

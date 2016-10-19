@@ -1,16 +1,26 @@
 %header.header
-  .grid-container
-    .grid-100
-      .header__title
-        %p.heading.-medium.-signature.stripped
-          Benefit Choices
-      %nav.header__nav
-        %ul
-          %li
-            = link_to 'Home', root_path, class: 'header__link'
-          %li
-            = link_to 'About', about_path, class: 'header__link'
-          %li
-            = link_to 'Service Area', service_area_path, class: 'header__link'
-          %li
-            = link_to 'Contact Us', new_email_path, class: 'header__link'
+  .header__wrapper
+    .grid-container
+      .grid-100
+        .header__title
+          %table
+            %tbody
+              %tr
+                %td.padding-r1
+                  = image_tag asset_url( 'logo.png' ), :alt => 'Benefit Choices logo', :class => 'logo -small'
+                %td
+                  %span.heading.-large.-signature.nowrap
+                    Benefit Choices
+                  %br
+                  %span.nowrap
+                    When the sale ends, the service begins.
+        %nav.header__nav
+          %ul
+            %li
+              = link_to 'Home', root_path, class: 'header__link'
+            %li
+              = link_to 'About', about_path, class: 'header__link'
+            %li
+              = link_to 'Service Area', service_area_path, class: 'header__link'
+            %li
+              = link_to 'Contact Us', new_email_path, class: 'header__link'

@@ -1,17 +1,23 @@
 .footer {
-    background-color: gray;
-    border-top: 1px solid $black;
     color: $white;
-    padding: 2em 0;
+    width: 100%;
 }
 
-.footer-link {
-    border-bottom: 2px solid gray;
+.footer__link {
+    border-bottom: 2px solid transparent;
     color: $white;
     
     &:hover {
         border-color: $white;
     }
+}
+
+.footer__main {
+    @include textured( 0.40 );
+    
+    background-color: $dark-cerulean;
+    border-top: 1px solid lighten( $dark-cerulean, 2% );
+    padding: 2em 0;
 }
 
 .footer__nav {
@@ -30,4 +36,13 @@
         float: right;
         list-style: none;
     }
+}
+
+.footer__pre {
+    @include textured( 0.50 );
+    
+    background-color: darken( $dark-cerulean, 5% );
+    border-bottom: 1px solid darken( $dark-cerulean, 10% );
+    border-top: 1px solid darken( $dark-cerulean, 7% );
+    padding: 1em 0;
 }
