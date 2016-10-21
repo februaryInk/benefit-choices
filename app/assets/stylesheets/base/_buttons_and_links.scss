@@ -1,5 +1,5 @@
 .button {
-    @include serif-family;
+    @include heading-family;
     
     background-color: transparent;
     border: none;
@@ -7,6 +7,7 @@
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
+    font-weight: bold;
     line-height: 1em;
     padding: 0.5em 0;
     position: relative;
@@ -15,8 +16,8 @@
     &.-bright {
         background-color: $tawny;
         color: $white;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+        padding-left: 1.75em;
+        padding-right: 1.75em;
         
         &.-inverse {
             background-color: $white;

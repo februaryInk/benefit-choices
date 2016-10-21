@@ -1,26 +1,31 @@
 .page-content
-  .grid-container
-    .centered.grid-100
-      %h1.heading.-large
-        Contact Us
-    .grid-100.grid-parent
-      = form_for @email do |f|
-        .grid-50.field
-          = f.label :name, class: 'required'
-          = f.text_field :name
-          = f.error_message :name
-        .grid-50.field
-          = f.label :return_email_address, 'Email Address', class: 'required'
-          = f.text_field :return_email_address
-          = f.error_message :return_email_address
+  %section
+    .grid-container
+      .grid-15
+        %br
+      .grid-70.grid-parent
         .grid-100
-          .field
-            = f.label :subject
-            = f.text_field :subject
-            = f.error_message :subject
-          .field
-            = f.label :content, 'Message', class: 'required'
-            = f.text_area :content
-            = f.error_message :content
-          .centered
-            = f.submit 'Submit', class: 'button -bright -large'
+          %h1.heading.-large
+            Contact Us
+          %p
+            We are here to answer any questions you may have regarding health coverage options. Please feel free to get in touch with us and we will get back to you as soon as we can.
+        = form_for @email do |f|
+          .grid-50.field
+            = f.label :name, class: 'required'
+            = f.text_field :name
+            = f.error_message :name
+          .grid-50.field
+            = f.label :return_email_address, 'Email Address', class: 'required'
+            = f.text_field :return_email_address
+            = f.error_message :return_email_address
+          .grid-100
+            .field
+              = f.label :subject
+              = f.text_field :subject
+              = f.error_message :subject
+            .field
+              = f.label :content, 'Message', class: 'required'
+              = f.text_area :content
+              = f.error_message :content
+            .centered
+              = f.submit 'Submit', class: 'button -bright -large'

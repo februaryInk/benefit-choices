@@ -31,40 +31,18 @@
     }
 }
 
-@mixin herringbone( $alpha ) {
-    position: relative;
-    
-    &::before {
-        background-image: image-url( 'herringbone.svg' );
-        background-repeat: both;
-        bottom: 0;
-        content: '';
-        left: 0;
-        opacity: $alpha;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 0;
-    }
-    
-    .grid-container {
-        position: relative;
-        z-index: 200;
-    }
-}
-
 @mixin overflow-clear {
     display: block;
     overflow: hidden;
     zoom: 1;
 }
 
-@mixin sans-serif-family {
-    font-family: Candara, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Candara ff', Ubuntu, sans-serif;
+@mixin text-family {
+    font-family: 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Ubuntu, sans-serif;
 }
 
-@mixin serif-family {
-    font-family: 'Nimbus Sans L', 'Mutki Narrow', 'Liberation Sans', Impact, serif;
+@mixin heading-family {
+    font-family: Economica, Impact, sans-serif;
 }
 
 @mixin signature-family {
@@ -104,11 +82,11 @@
     }
 }
 
-@mixin textured( $alpha ) {
+@mixin translucent-background( $alpha, $image ) {
     position: relative;
     
     &::before {
-        background-image: image-url( 'shadow.png' );
+        background-image: image-url( $image );
         background-repeat: both;
         bottom: 0;
         content: '';

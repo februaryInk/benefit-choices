@@ -4,7 +4,9 @@ a {
 }
 
 body {
-    @include sans-serif-family;
+    @include text-family;
+    
+    color: $color-text;
 }
 
 h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 16px; }
@@ -48,7 +50,7 @@ em, i { font-style: italic; }
 .centered { text-align: center; }
 
 .heading { 
-    @include serif-family;
+    @include heading-family;
     
     &.-small { font-size: 24px; }
     &.-medium { font-size: 28px; }
@@ -77,7 +79,7 @@ em, i { font-style: italic; }
 a, span { &.underlined { text-decoration: underline; } }
 h1, h2, h3, h4, h5, h6 { 
     &.underlined { 
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $color-text;
         padding-bottom: 4px; 
         width: 100%; 
     } 

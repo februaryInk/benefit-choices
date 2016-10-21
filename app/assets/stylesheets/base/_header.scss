@@ -1,32 +1,25 @@
 header {
-    @include textured( 0.40 );
+    @include translucent-background( 0.40, 'shadow.png' );
     
     background-color: $dark-cerulean;
-    border-bottom: 1px solid darken( $dark-cerulean, 20% );
+    box-shadow: 0 10px 15px 0 #888888;
     color: $white;
     width: 100%;
+    z-index: 2;
 }
 
 .header__link {
     border-radius: 0.5em;
     color: $white;
     display: inline-block;
-    font-size: 1.125em;
+    font-size: 1.25em;
     padding: 0.75em 0;
-    
-    &:hover {
-        background-color: gray;
-    }
-
-    &.open {
-        background-color: gray;
-        color: $white;
-    }
 }
 
 .header__nav {
     float: right;
     height: 100%;
+    margin-top: 1em;
     
     li {
         display: block;
@@ -49,6 +42,5 @@ header {
 }
 
 .header__wrapper {
-    border-bottom: 2px solid lighten( $dark-cerulean, 10% );
     padding: 1em 0;
 }

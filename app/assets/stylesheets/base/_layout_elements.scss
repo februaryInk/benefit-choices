@@ -1,14 +1,38 @@
-.banner {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+section {
+    padding-bottom: 5em;
+    padding-top: 5em;
 }
 
-.colored {
-    @include herringbone( 0.25 );
+.banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 0;
+    padding: 6.5em 0;
+    width: 100%;
     
-    padding: 5em 0;
+    &::before {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &.-bikers {
+        background-image:  image-url( 'bikers.jpg' );
+    }
+
+    &.-country-road {
+        @include translucent-background( 0.75, 'country-road.jpg' );
+    }
+    
+    &.-family {
+        @include translucent-background( 1.00, 'family.jpg' );
+    }
+}
+
+.blue-herring {
+    @include translucent-background( 0.20, 'herringbone.svg' );
 }
 
 .map-container {
@@ -18,12 +42,10 @@
 
 .page-content {
     padding-bottom: 4em;
-    padding-top: 4em;
 }
 
 .panel {
     background-color: $white;
-    border: 1px solid gray;
     border-radius: 0.25em;
     margin-bottom: 1em;
     padding: 1em;

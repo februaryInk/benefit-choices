@@ -1,25 +1,36 @@
 .page-content
-  %section
+  %section.banner.-family
     .grid-container
       .grid-40
-        %h1.heading.-large
-          Finding the right health insurance coverage for your needs.
-        %p
-          Here at Benefit Choices, we offer our guidance in matching your individual or company requirements with the insurance plans that will work best for you. Our experienced insurance professionals are available to help you find solutions that meet your unique needs.
+        %div
+          %h1.heading.-large
+            Finding the best health coverage for your personal needs and budget.
+          %p
+            Here at Benefit Choices, we offer our guidance in matching your individual or company requirements with the insurance plans that will work best for you. Our experienced insurance professionals are available to help you find solutions that meet your unique needs. We are dedicated to finding the plan that best serves you.
       .grid-60
-        = image_tag asset_path( 'country-road.jpg' ), :alt => 'Country Road', :class => 'full-width'
-  %section.colored
-  %section.padding-b3.padding-t3
+        %br
+  %section
+    .grid-container
+      %h1.centered.heading.-large
+        Questions about which health coverage options are right for you?
+      %p.centered
+        Our experienced agents are available to help.
+      .centered
+        = link_to 'Contact Us', new_email_path, :class => 'button -bright -large'
+  %section.blue-herring
     .grid-container
       .grid-33
-        = link_to 'About Us', '#', :class => 'button -bright'
+        %h2.centered.heading.-medium
+          Medicare
         %p
-          It is our goal to educate our clients about the best insurance options available to them and guide them to the solution that is right for their situation. For more information about Benefit Choices, see our About Us page.
+          We are licensed in and knowledgeable about Medicare. Our agents are happy to assist you in finding the right Medicare plan.
       .grid-33
-        = link_to 'Products', '#', :class => 'button -bright'
+        %h2.centered.heading.-medium
+          Medi-Share
         %p
-          We are always looking to get our clients the best product and services for the best price. If you are interested in the benefits that we provide, then head on over to our Products page, where you can learn about the direct and payroll products that we offer.
+          
       .grid-33
-        = link_to 'Claims', '#', :class => 'button -bright'
+        %h2.centered.heading.-medium
+          Everything Else
         %p
-          Are you a Benefit Choices client and need to file an insurance claim? Our Claims page has what you need. We provide forms for accident, cancer, disability, ICU, and sickness.
+          We are also able to provide Accident, Dental, Disability, Life (whole, term, and universal), and Vision coverage options.
