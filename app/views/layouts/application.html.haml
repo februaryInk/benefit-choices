@@ -7,7 +7,7 @@
       = content_for?(:title) ? yield(:title) : 'Benefit Choices'
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}", 'data-turbolinks-track' => true
+    =# javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}", 'data-turbolinks-track' => true
     = yield(:javascript) if content_for?(:javascript)
     = csrf_meta_tag
   %body
