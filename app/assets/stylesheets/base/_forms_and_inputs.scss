@@ -33,7 +33,7 @@ input[ type='text' ] {
     width: 100%;
     
     &.field-error {
-        border: 1px solid $lotus;
+        border: 1px solid lighten( $lotus, 15% );
     }
 }
 
@@ -52,6 +52,8 @@ textarea {
 }
 
 .error-message {
+    color: $sea-pink;
+    font-weight: bolder;
     line-height: 1em;
     margin: 0;
     padding: 0.25em 0 0;

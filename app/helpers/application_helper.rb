@@ -15,4 +15,9 @@ module ApplicationHelper
   def link_to_remove_fields(name, path, classy = '')
     link_to name, path, class: 'link-to-remove-fields ' + classy
   end
+  
+  # Agent Medi-Share registration URL.
+  def medi_share_registration_url
+    'https://www.htfshare.com/#/00531000007wbDqAAI/apply'
+  end
 end

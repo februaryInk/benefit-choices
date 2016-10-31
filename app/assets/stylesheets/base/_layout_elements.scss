@@ -12,14 +12,12 @@ section {
     padding: 6.5em 0;
     width: 100%;
     
-    &::before {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
     &.-bikers {
         background-image:  image-url( 'bikers.jpg' );
+    }
+
+    &.-community {
+        background-image: image-url( 'community.jpeg' );
     }
 
     &.-country-road {
@@ -27,7 +25,11 @@ section {
     }
     
     &.-family {
-        @include translucent-background( 1.00, 'family.jpg' );
+        background-image: image-url( 'family.jpg' );
+    }
+    
+    &.-seniors {
+        background-image: image-url( 'seniors.jpeg' );
     }
 }
 
@@ -41,7 +43,6 @@ section {
 }
 
 .page-content {
-    padding-bottom: 4em;
 }
 
 .panel {

@@ -8,82 +8,66 @@
     viewBox="0 0 500 500">
     <g id="ambulance" transform="translate( 300, 10 )">
         <rect
-            style="fill: #aa0000; stroke: none;"
-            height="15"
+            style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
+            height="10"
             width="20"
             rx="5"
             ry="5"
-            x="75"
+            x="70"
             y="0" />
         <path
-            style="fill: #ffffff; stroke: none;"
-            d="m 0,10 100,0 50,65 0,35 -150,0 0,-100" />
+            style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
+            d="m 0,10 100,0 50,70 0,30 -150,0 0,-100 z" />
         <path
-            style="fill: #99dddd; stroke: none;"
-            d="m 100,20 40,55 -40,0" />
+            style="fill: #336d99; stroke: none;"
+            d="m 100,20 40,60 -40,0 z" />
         <circle
             cx="30"
             cy="110"
-            r="20"
-            style="fill: #888888; stroke: none;" />
-        <circle
-            cx="30"
-            cy="110"
-            r="10"
-            style="fill: #99dddd; stroke: none;" />
+            r="22"
+            style="fill: #336d99; stroke: none;" />
         <circle
             cx="115"
             cy="110"
-            r="20"
-            style="fill: #888888; stroke: none;" />
-        <circle
-            cx="115"
-            cy="110"
-            r="10"
-            style="fill: #99dddd; stroke: none;" />
+            r="22"
+            style="fill: #336d99; stroke: none;" />
         <path
-            style="fill: #880000; stroke: none;"
-            d="m 50,20 10,0 0,20 20,0 0,20 -20,0 0,20 -10,0 -5,-30 z" />
-        <path
-            style="fill: #990000; stroke: none;"
-            d="m 20,40 20,0 0,-20 10,0 0,60 -10,0 0,-20 -20,0 z" />
+            style="fill: #336d99; stroke: none;"
+            d="m 40,20 20,0 0,20 20,0 0,20 -20,0 0,20 -20,0 0,-20 -20,0 0,-20 20,0 0,-20" />
     </g>
     <g id="bandaid">
     </g>
     <g id="cross" transform="translate( 175, 175 )">
         <path
-            style="fill: #880000; stroke: none;"
-            d="m 75,0 25,0 0,50 50,0 0,50 -50,0 0,50 -25,0 -10,-75 z" />
-        <path
-            style="fill: #990000; stroke: none;"
-            d="m 0,50 50,0 0,-50 25,0 0,150 -25,0 0,-50 -50,0 z" />
+            style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
+            d="m 50,0 50,0 0,50 50,0 0,50 -50,0 0,50 -50,0 0,-50 -50,0 0,-50 50,0 z" />
     </g>
-    <g id="eye" transform="translate( 5, 350 )">
+    <g id="eye" transform="translate( 25, 375 )">
         <path
-            style="fill: #ffffff; stroke: none;"
+            style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;;"
             d="m 0,40
             a 100 100 0 0 1 160 0
-            a 100 100 0 0 1 -160 0" />
+            a 100 100 0 0 1 -160 0 z" />
         <circle
-            style="fill: #5599aa; stroke: none;"
+            style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
             cx="80"
             cy="40"
-            r="35" />
+            r="32" />
         <circle
-            style="fill: #ffffff; stroke: none;"
-            cx="90"
+            style="fill: #336d99; stroke: none;"
+            cx="85"
             cy="25"
             r="10" />
         <circle
-            style="fill: #ffffff; stroke: none;"
-            cx="105"
+            style="fill: #336d99; stroke: none;"
+            cx="98"
             cy="40"
             r="5" />
     </g>
-    <g id="pill" transform="translate( 365, 400 )">
+    <g id="pill" transform="translate( 300, 400 )">
         <g  transform="rotate( 45, 70, 35 )">
             <rect
-                style="fill: #ffffff; stroke: none;"
+                style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
                 rx="35"
                 ry="35"
                 height="70"
@@ -91,28 +75,33 @@
                 x="0"
                 y="0" />
             <path
-                style="fill: #5599aa; stroke: none;"
-                d="m 70,10 35,0
-                a 25 25 0 0 1 0 50
-                l -35,0 z" />
+                style="fill: #336d99; stroke: none;"
+                d="m 70,0 40,0
+                a 30 30 0 0 1 0 60
+                l -40,0 z" />
         </g>
     </g>
-    <g id="prescription">
-        <path
-            style="fill: #bb6633; stroke: none;"
-            d="m 10,20 90,0 0,45 -10,40 10,40 0,25 -90,0 0,-25 10,-40 -10,-40 z" />
-        <rect
-            style="fill: #ffffff; stroke: none;"
-            height="40"
-            width="110"
-            x="0"
-            y="0" />
-        <rect
-            style="fill: #ffffff; stroke: none;"
-            height="80"
-            width="90"
-            x="10"
-            y="65" />
+    <g id="prescription" transform="translate( 20, 160 )">
+        <g  transform="rotate( 15, 45, 70 )">
+            <rect
+                style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
+                height="110"
+                width="80"
+                x="10"
+                y="30" />
+            <rect
+                style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
+                height="30"
+                width="100"
+                x="0"
+                y="0" />
+            <rect
+                style="fill: none; stroke: #336d99; stroke-linejoin: round; stroke-width: 10px;"
+                height="70"
+                width="80"
+                x="10"
+                y="50" />
+        </g>
     </g>
     <g id="stethoscope">
     </g>

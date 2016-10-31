@@ -1,0 +1,23 @@
+.page-content
+  %section.banner.-community
+    .grid-container
+      .grid-40
+        %h1.heading.-large
+          Medi-Share
+      .grid-60
+  %section
+    .grid-container
+      .grid-100.centered
+        %h2.-heading.-medium
+          Are you ready to sign up for Medi-Share?
+        %p
+          It's easy to begin the registration process.
+        = link_to 'Register for Medi-Share', medi_share_registration_url, :class => 'button -bright -large'
+  %section
+    .grid-container
+      .grid-100.centered
+        %h2.-heading.-medium
+          Still have questions about Medi-Share?
+        %p
+          As approved Medi-Share New Member Representatives, we are equipped to answer any additional questions you may have regarding Medi-Share.
+        = link_to 'Contact Us about Medi-Share', new_email_path, :class => 'button -bright -large'

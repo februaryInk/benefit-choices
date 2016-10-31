@@ -13,6 +13,7 @@ class EmailsController < ApplicationController
   end
   
   def new
+    flash[ :danger ] = 'This is the danger.'
     @email = Email.new
   end
   

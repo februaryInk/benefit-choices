@@ -2,7 +2,7 @@ header {
     @include translucent-background( 0.40, 'shadow.png' );
     
     background-color: $dark-cerulean;
-    box-shadow: 0 10px 15px 0 #888888;
+    box-shadow: 0 5px 15px 0 $black;
     color: $white;
     width: 100%;
     z-index: 2;
