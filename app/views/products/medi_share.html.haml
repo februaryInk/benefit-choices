@@ -7,12 +7,29 @@
       .grid-60
   %section
     .grid-container
-      .grid-100.centered
-        %h2.-heading.-medium
+      .centered.grid-100
+        %h2.heading.-medium
           Are you ready to sign up for Medi-Share?
         %p
           It's easy to begin the registration process.
         = link_to 'Register for Medi-Share', medi_share_registration_url, :class => 'button -bright -large'
+  %section.blue-herring
+    .grid-container
+      .grid-100
+        %h2.centered.heading.-medium
+          Frequently Asked Questions
+        - @faqs.each do | faq |
+          .expandable
+            .expandable__shown
+              %h3.expandable__title
+                = faq.question
+            .expandable__hidden
+              = simple_format( faq.answer )
+  %section
+    .grid-container
+      .grid-100
+        %p.t-small
+          Medi-Share is not insurance or an insurance policy, nor is it offered through an insurance company. Whether anyone chooses to assist you with your medical bills will be totally voluntary, as no other member will be compelled by law to contribute toward your medical bills. As such, Medi-Share should never be considered to be insurance. Whether you receive any payments for medical expenses and whether or not Medi-Share continues to operate, you are always personally responsible for the payment of your own medical bills. Medi-Share is not subject to the regulatory requirements or consumer protections of your particular state’s Insurance Code or Statutes.
   %section
     .grid-container
       .grid-100.centered

@@ -1,0 +1,2 @@
+class MediShareFaq < ApplicationRecord
+end

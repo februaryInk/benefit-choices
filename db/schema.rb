@@ -10,60 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719233647) do
+ActiveRecord::Schema.define(version: 20161031202020) do
 
-  create_table "jobs", force: :cascade do |t|
-    t.date     "date"
-    t.string   "client_email"
-    t.string   "client_name"
-    t.text     "description"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-  create_table "jobs_services", force: :cascade do |t|
-    t.integer  "job_id"
-    t.integer  "service_id"
+  create_table "medi_share_faqs", force: :cascade do |t|
+    t.integer  "position"
+    t.text     "answer"
+    t.text     "question"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["job_id"], name: "index_jobs_services_on_job_id"
-    t.index ["service_id"], name: "index_jobs_services_on_service_id"
-  end
-
-  create_table "photos", force: :cascade do |t|
-    t.integer  "job_id"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.index ["job_id"], name: "index_photos_on_job_id"
-  end
-
-  create_table "reviews", force: :cascade do |t|
-    t.integer  "job_id"
-    t.integer  "rating",     default: 5
-    t.text     "content"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.index ["job_id"], name: "index_reviews_on_job_id"
-  end
-
-  create_table "services", force: :cascade do |t|
-    t.string   "type"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.string   "banner_file_name"
-    t.string   "banner_content_type"
-    t.integer  "banner_file_size"
-    t.datetime "banner_updated_at"
-    t.string   "thumbnail_file_name"
-    t.string   "thumbnail_content_type"
-    t.integer  "thumbnail_file_size"
-    t.datetime "thumbnail_updated_at"
-    t.string   "name"
-    t.text     "description"
   end
 
 end

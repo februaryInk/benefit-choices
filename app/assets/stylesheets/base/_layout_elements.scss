@@ -37,6 +37,31 @@ section {
     @include translucent-background( 0.20, 'herringbone.svg' );
 }
 
+.expandable {
+    background-color: $white;
+    margin-bottom: 0.5em;
+    
+    &.-even {
+    
+    }
+    
+    &.-odd {
+    
+    }
+}
+
+.expandable__hidden {
+    display: none;
+}
+
+.expandable__shown {
+    padding: 1em 2em 1em 1em;
+}
+
+.expandable__title {
+    margin-bottom: 0;
+}
+
 .map-container {
     height: 30em;
     width: 100%;

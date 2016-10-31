@@ -6,5 +6,6 @@ class ProductsController < ApplicationController
   end
 
   def medi_share
+    @faqs = MediShareFaq.all.order( :position )
   end
 end

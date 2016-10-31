@@ -52,6 +52,8 @@ em, i { font-style: italic; }
 .heading { 
     @include heading-family;
     
+    font-weight: bold;
+    
     &.-small { font-size: 24px; }
     &.-medium { font-size: 28px; }
     &.-large { font-size: 32px; }
@@ -78,6 +80,8 @@ em, i { font-style: italic; }
 
 a, span { &.underlined { text-decoration: underline; } }
 h1, h2, h3, h4, h5, h6 { 
+    font-weight: 400;
+    
     &.underlined { 
         border-bottom: 1px solid $color-text;
         padding-bottom: 4px; 
