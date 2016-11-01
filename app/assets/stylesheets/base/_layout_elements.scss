@@ -37,25 +37,45 @@ section {
     @include translucent-background( 0.20, 'herringbone.svg' );
 }
 
+.color {
+    width: 100%;
+    
+    &.-dark-cerulean {
+        background-color: $dark-cerulean;
+    }
+    
+    &.-linen {
+        background-color: $linen;
+    }
+}
+
 .expandable {
-    background-color: $white;
-    margin-bottom: 0.5em;
+    cursor: pointer;
+    
+    &.-hover {
+        background-color: #e4edf5;
+    }
     
     &.-even {
-    
+        //background-color: $white;
     }
     
     &.-odd {
-    
+        //background-color: #e4edf5;
     }
 }
 
 .expandable__hidden {
     display: none;
+    padding: 1em;
+    
+    p {
+        font-size: 1em;
+    }
 }
 
 .expandable__shown {
-    padding: 1em 2em 1em 1em;
+    padding: 1em;
 }
 
 .expandable__title {

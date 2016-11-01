@@ -13,19 +13,25 @@
         %p
           It's easy to begin the registration process.
         = link_to 'Register for Medi-Share', medi_share_registration_url, :class => 'button -bright -large'
-  %section.blue-herring
+  %section.color.-dark-cerulean.padding-bt1
     .grid-container
       .grid-100
-        %h2.centered.heading.-medium
+        %h2.centered.heading.-medium.margin-b0.t-white
           Frequently Asked Questions
+  %section
+    .grid-container
+      .grid-100
+        - i = 1
         - @faqs.each do | faq |
-          .expandable
+          .expandable.js-expandable{ :class => ( i.odd? ? '-odd' : '-even' ) }
             .expandable__shown
               %h3.expandable__title
+                %span.fa.fa-caret-right.padding-r1
                 = faq.question
-            .expandable__hidden
+            .expandable__hidden.js-expandable-hidden
               = simple_format( faq.answer )
-  %section
+          - i += 1
+  %section.blue-herring
     .grid-container
       .grid-100
         %p.t-small
