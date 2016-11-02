@@ -2,10 +2,11 @@
   %section.banner.-seniors
     .grid-container
       .grid-40
-        %h1.heading.-large
-          Medicare
-        %p
-          Medicare is available to individuals with disabilities and seniors age 65 and older. 
+        .color.-translucent-white.padding-1
+          %h1.heading.-large
+            Medicare
+          %p
+            Medicare is our country's health insurance program for seniors age 65 and older and to individuals with certain disabilities. Medicare can assist with health care costs while some of the expenses not covered by the program can be covered by supplementary Medigap policies.
       .grid-60
   %section
     .grid-container
@@ -15,3 +16,38 @@
         %p
           Our agents are Medicare-certified and highly knowledgeable about the variety of options that Medicare offers. We can tell you if you are eligible and guide you to a plan that covers your needs.
         = link_to 'Contact Us about Medicare', new_email_path, :class => 'button -bright -large'
+  %section.color.-dark-cerulean.padding-bt1
+    .grid-container
+      .grid-100
+        %h2.centered.heading.-medium.margin-b0.t-white
+          The Four Parts of Medicare
+  %section
+    .grid-container
+      .grid-25
+        %h3.centered.t-grand
+          Part A
+        %h4.centered.t-large
+          Hospital Insurance
+        %p
+          Part A helps pay for inpatient care in a hospital, or skilled nursing facility following a hospital stay. It also pays for some home health care, and hospice care.
+      .grid-25
+        %h3.centered.t-grand
+          Part B
+        %h4.centered.t-large
+          Medical Insurance
+        %p
+          Part B helps pay for services from doctors and other health care providers, outpatient care, home health care, durable medical equipment, and some preventive services.
+      .grid-25
+        %h3.centered.t-grand
+          Part C
+        %h4.centered.t-large
+          Advantage Plans
+        %p
+          Part C plans are available in many areas. People with Medicare Parts A and B can choose to receive all their health care services through a private insurance company approved by Medicare to provide this coverage.
+      .grid-25
+        %h3.centered.t-grand
+          Part D
+        %h4.centered.t-large
+          Prescription Drug Coverage
+        %p
+          Part D helps cover the cost of prescription drugs.
