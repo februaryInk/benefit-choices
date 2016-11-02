@@ -21,7 +21,7 @@ section {
     }
 
     &.-country-road {
-        @include translucent-background( 0.75, 'country-road.jpg' );
+        @include translucent-image( 0.75, 'country-road.jpg' );
     }
     
     &.-family {
@@ -34,7 +34,7 @@ section {
 }
 
 .blue-herring {
-    @include translucent-background( 0.20, 'herringbone.svg' );
+    @include translucent-image( 0.20, 'herringbone.svg' );
 }
 
 .color {
@@ -47,22 +47,35 @@ section {
     &.-linen {
         background-color: $linen;
     }
+    
+    &.-translucent-white {
+        @include translucent-color( 0.60, $white );
+    }
 }
 
 .expandable {
     cursor: pointer;
     
     &.-hover {
-        background-color: #e4edf5;
+        background-color: $pattens-blue;
     }
     
-    &.-even {
-        //background-color: $white;
+    &.-open {
+        .expandable__arrow {
+            transform: rotate( 90deg );
+            transition: all 0.25s ease-out;
+        }
     }
+}
+
+.expandable__arrow {
+    transform: rotate( 0deg );
+    transition: all 0.25s ease-out;
     
-    &.-odd {
-        //background-color: #e4edf5;
-    }
+    display: inline-block;
+    margin-right: 1em;
+    text-align: center;
+    width: 1.25em;
 }
 
 .expandable__hidden {

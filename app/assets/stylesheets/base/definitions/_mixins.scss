@@ -82,7 +82,28 @@
     }
 }
 
-@mixin translucent-background( $alpha, $image ) {
+@mixin translucent-color( $alpha, $color ) {
+    position: relative;
+    
+    &::before {
+        background-color: $color;
+        bottom: 0;
+        content: '';
+        left: 0;
+        opacity: $alpha;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+    
+    * {
+        position: relative;
+        z-index: 200;
+    }
+}
+
+@mixin translucent-image( $alpha, $image ) {
     position: relative;
     
     &::before {

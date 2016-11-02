@@ -27,15 +27,15 @@
     }
     
     &.-dark {
-        background-color: gray;
+        background-color: $dark-cerulean;
         color: $white;
         padding-left: 1.5em;
         padding-right: 1.5em;
         
         &.-inverse {
             background-color: $white;
-            border: 1px solid gray;
-            color: gray;
+            border: 1px solid $dark-cerulean;
+            color: $dark-cerulean;
         }
     }
     

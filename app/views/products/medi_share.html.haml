@@ -2,8 +2,11 @@
   %section.banner.-community
     .grid-container
       .grid-40
-        %h1.heading.-large
-          Medi-Share
+        .color.-translucent-white.padding-1
+          %h1.heading.-large
+            Medi-Share
+          %p
+            If you’re a Christian who’s feeling a bit unsettled about possible changes to your health insurance, I’ve got great news! There’s a health care choice believers can believe in! It’s called Medi-Share. Unlike insurance, Medi-Share is health care done God’s way—a community of more than 200,000 believers who share each other’s medical bills. It’s about half the cost of insurance, and you can enroll any time. Plus it’s fully acceptable under the law. Best of all, you never have to pay for things that go against your conscience. Below are just a few of the reasons Christians all over the country are opting for this faith-based alternative to health insurance.
       .grid-60
   %section
     .grid-container
@@ -13,12 +16,20 @@
         %p
           It's easy to begin the registration process.
         = link_to 'Register for Medi-Share', medi_share_registration_url, :class => 'button -bright -large'
+  %section.blue-herring
+    .grid-container
+      .grid-100
+        %h2.heading.-medium
+          Why Medi-Share?
+        %p
+          Medi-Share is affordable, Biblical, and penalty free. Although it is not insurance, being based on the principle of sharing medical needs as a Christian community, Medi-Share members are exempt from the Affordable Care Act mandate to purchase insurance or face financial penalties.
+        = link_to 'Learn More about Medi-Share', medi_share_information_url, :class => 'button -dark -large'
   %section.color.-dark-cerulean.padding-bt1
     .grid-container
       .grid-100
-        %h2.centered.heading.-medium.margin-b0.t-white
+        %h2.heading.-medium.margin-b0.t-white
           Frequently Asked Questions
-  %section
+  %section.padding-t3
     .grid-container
       .grid-100
         - i = 1
@@ -26,7 +37,7 @@
           .expandable.js-expandable{ :class => ( i.odd? ? '-odd' : '-even' ) }
             .expandable__shown
               %h3.expandable__title
-                %span.fa.fa-caret-right.padding-r1
+                %span.fa.fa-caret-right.expandable__arrow.js-expandable-arrow
                 = faq.question
             .expandable__hidden.js-expandable-hidden
               = simple_format( faq.answer )
@@ -39,7 +50,7 @@
   %section
     .grid-container
       .grid-100.centered
-        %h2.-heading.-medium
+        %h2.heading.-medium
           Still have questions about Medi-Share?
         %p
           As approved Medi-Share New Member Representatives, we are equipped to answer any additional questions you may have regarding Medi-Share.

@@ -1,5 +1,5 @@
 header {
-    @include translucent-background( 0.40, 'shadow.png' );
+    @include translucent-image( 0.40, 'shadow.png' );
     
     background-color: $dark-cerulean;
     box-shadow: 0 5px 15px 0 $black;
