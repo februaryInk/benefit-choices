@@ -6,7 +6,7 @@
           %h1.heading.-large
             Medicare
           %p
-            Medicare is our country's health insurance program for seniors age 65 and older and to individuals with certain disabilities. Medicare can assist with health care costs while some of the expenses not covered by the program can be covered by supplementary Medigap policies.
+            Medicare is our country's health insurance program for seniors age 65 and older and for individuals with certain disabilities. Medicare can assist with health care costs while some of the expenses not covered by the program can be covered by supplementary Medigap policies.
       .grid-60
   %section
     .grid-container
@@ -51,3 +51,20 @@
           Prescription Drug Coverage
         %p
           Part D helps cover the cost of prescription drugs.
+  %section.color.-dark-cerulean.padding-bt1
+    .grid-container
+      .grid-100
+        %h2.centered.heading.-medium.margin-b0.t-white
+          Our Partners in Providing Medicare Coverage
+  %section
+    .grid-container
+      .grid-30
+        = image_tag asset_url( 'priority-health-logo.png' ), :alt => 'Priority Health logo', :class => 'full-width'
+      .grid-5
+        %br
+      .grid-30
+        = image_tag asset_url( 'blue-cross-blue-shield-logo.png' ), :alt => 'Priority Health logo', :class => 'full-width'
+      .grid-5
+        %br
+      .grid-30
+        = image_tag asset_url( 'humana-logo.png' ), :alt => 'Priority Health logo', :class => 'full-width'

@@ -5,7 +5,7 @@ class EmailsController < ApplicationController
     if @email.valid?
       mail = AdminMailer.contact_us(@email)
       mail.deliver_now
-      flash[:success] = 'Your message has been sent.'
+      flash[ :success ] = 'Your message has been sent.'
       redirect_to new_email_path
     else
       render :new
@@ -13,14 +13,13 @@ class EmailsController < ApplicationController
   end
   
   def new
-    flash[ :danger ] = 'This is the danger.'
     @email = Email.new
   end
   
   private
   
     def email_params
-      params.require(:email).permit(
+      params.require( :email ).permit(
         :content,
         :name,
         :return_email_address,
