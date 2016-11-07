@@ -6,7 +6,7 @@ class EmailsController < ApplicationController
       mail = AdminMailer.contact_us(@email)
       mail.deliver_now
       flash[ :success ] = 'Your message has been sent.'
-      redirect_to new_email_path
+      redirect_to contact_us_path
     else
       render :new
     end

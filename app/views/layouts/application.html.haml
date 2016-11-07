@@ -1,20 +1,21 @@
 !!! 5
 %html{ :lang => 'en' }
   %head
-    %meta{ charset: 'utf-8' }
-    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+    %meta{ :charset => 'utf-8' }
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0' }
+    %meta{ :name => 'google-site-verification', :content => 'PurnMHpThf8_pTDwXGId19Oxp8IcaTqxJpuOKRvbwOk' }
+    %meta{ :name => 'description', :content => 'Dedicated to helping individuals and companies find the health coverage solution that uniquely suits their situation, needs, and budget.' }
     %title
-      = content_for?(:title) ? yield(:title) : 'Benefit Choices'
+      = content_for?( :title ) ? yield( :title ) : 'Benefit Choices'
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    =# javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}", 'data-turbolinks-track' => true
-    = yield(:javascript) if content_for?(:javascript)
+    = yield( :javascript ) if content_for?( :javascript )
     = csrf_meta_tag
   %body
     #page-wrapper
-      = yield(:header) if content_for?(:header)
-      = yield(:utility_bar) if content_for?(:utility_bar)
-      = yield(:flash_bar) if content_for?(:flash_bar)
+      = yield( :header ) if content_for?( :header )
+      = yield( :utility_bar ) if content_for?( :utility_bar )
+      = yield( :flash_bar ) if content_for?( :flash_bar )
       = yield
-    = yield(:footer) if content_for?(:footer)
+    = yield( :footer ) if content_for?( :footer )
     -# console if Rails.env.development?
