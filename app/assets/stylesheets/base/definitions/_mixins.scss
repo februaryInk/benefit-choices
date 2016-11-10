@@ -119,7 +119,7 @@
         z-index: 0;
     }
     
-    .grid-container {
+    & > * {
         position: relative;
         z-index: 200;
     }

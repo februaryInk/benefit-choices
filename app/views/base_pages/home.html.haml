@@ -17,7 +17,7 @@
         %p.centered
           Our experienced agents are available to help.
         .centered
-          = link_to 'Contact Us', contact_us_path, :class => 'button -bright -large'
+          = link_to 'Contact Us', new_email_path, :class => 'button -bright -large'
   %section
     .grid-container.padding-b3
       .grid-33.padding-lr4
@@ -32,11 +32,13 @@
           Medicare
         %p
           With the large number of options that it offers to individuals with disabilities and seniors 65 and over, Medicare insurance can be difficult to navigate. Our Medicare-certified agents are happy to assist you in finding the right Medicare plan.
+        = link_to 'Learn More', medicare_path, :class => 'button -bright'
       .centered.grid-33
         %h2.centered.heading.-medium
           Medi-Share
         %p
           Medi-Share is an affordable, Biblical, penalty-free health care solution based on the principle of sharing medical needs as a Christian community. As New Member Representatives, we can help you get informed about this faith-based health insurance alternative.
+        = link_to 'Learn More', medi_share_path, :class => 'button -bright'
       .centered.grid-33
         %h2.centered.heading.-medium
           Everything Else

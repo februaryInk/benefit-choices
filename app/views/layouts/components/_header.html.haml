@@ -1,26 +1,40 @@
 %header.header
-  .header__wrapper
+  .header__upper
+    .grid-container.full-height
+      .grid-100.full-height
+        %table.header__title
+          %tbody
+            %tr
+              %td.padding-r1
+                = image_tag asset_url( 'logo.png' ), :alt => 'Benefit Choices logo', :class => 'logo -small'
+              %td
+                %h1.heading.-grand.-signature.margin-b0
+                  Benefit Choices
+        .header__phone
+          %span.fa.fa-phone
+          %span
+            (616) 677-3777
+  .header__lower
     .grid-container
       .grid-100
-        .header__title
-          %table
-            %tbody
-              %tr
-                %td.padding-r1
-                  = image_tag asset_url( 'logo.png' ), :alt => 'Benefit Choices logo', :class => 'logo -small'
-                %td
-                  %span.heading.-large.-signature.nowrap
-                    Benefit Choices
-                  %br
-                  %span.heading.-small.nowrap
-                    When the sale ends, the service begins.
+        .header__slogan
+          %h2.heading.-medium.margin-b0
+            When the sale ends, the service begins.
         %nav.header__nav
           %ul
             %li
-              = link_to 'Home', root_path, class: 'header__link'
+              = link_to root_path, class: 'header__link js-openable-link' do
+                %span
+                  Home
             %li
-              = link_to 'Medicare', products_medicare_path, class: 'header__link'
+              = link_to medicare_path, class: 'header__link js-openable-link' do
+                %span
+                  Medicare
             %li
-              = link_to 'Medi-Share', products_medi_share_path, class: 'header__link'
+              = link_to medi_share_path, class: 'header__link js-openable-link' do
+                %span
+                  Medi-Share
             %li
-              = link_to 'Contact Us', contact_us_path, class: 'header__link'
+              = link_to new_email_path, class: 'header__link js-openable-link' do
+                %span
+                  Contact Us

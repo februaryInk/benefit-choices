@@ -6,17 +6,17 @@ xml.tag! 'urlset', 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
         xml.priority( 1.0 )
     }
     xml.url {
-        xml.loc( "#{contact_us_url}" )
+        xml.loc( "#{new_email_url}" )
         xml.changefreq( 'weekly' )
         xml.priority( 0.5 )
     }
     xml.url {
-        xml.loc( "#{products_medicare_url}" )
+        xml.loc( "#{medicare_url}" )
         xml.changefreq( 'weekly' )
         xml.priority( 0.9 )
     }
     xml.url {
-        xml.loc( "#{products_medi_share_url}" )
+        xml.loc( "#{medi_share_url}" )
         xml.changefreq( 'weekly' )
         xml.priority( 0.9 )
     }

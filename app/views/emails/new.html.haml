@@ -9,7 +9,7 @@
             Contact Us
           %p
             We are here to answer any questions you may have regarding health coverage options. Please feel free to get in touch with us and we will get back to you as soon as we can.
-        = form_for @email, :url => contact_us_path do |f|
+        = form_for @email, :url => new_email_path do | f |
           .grid-50.field
             = f.label :name, class: 'required'
             = f.text_field :name
