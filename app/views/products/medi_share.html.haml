@@ -32,16 +32,14 @@
   %section.padding-t3
     .grid-container
       .grid-100
-        - i = 1
         - @faqs.each do | faq |
-          .expandable.js-expandable{ :class => ( i.odd? ? '-odd' : '-even' ) }
+          .expandable.js-expandable
             .expandable__shown
               %h3.expandable__title
                 %span.fa.fa-caret-right.expandable__arrow.js-expandable-arrow
                 = faq.question
             .expandable__hidden.js-expandable-hidden
               = simple_format( faq.answer )
-          - i += 1
   %section.blue-herring
     .grid-container
       .grid-100

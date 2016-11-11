@@ -11,6 +11,9 @@
  * file per style scope.
 */
 
+$media-mobile-max: 767px !default;
+$media-desktop-min: 768px !default;
+
 @import 'normalize-rails';
 @import 'font-awesome';
 @import 'unsemantic';

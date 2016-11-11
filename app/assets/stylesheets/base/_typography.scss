@@ -21,7 +21,7 @@ label {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.25em;
     line-height: 1.75em;
     margin-bottom: 1em;
     margin-top: 0;
@@ -54,9 +54,9 @@ em, i { font-style: italic; }
     
     font-weight: bold;
     
-    &.-small { font-size: 24px; }
-    &.-medium { font-size: 28px; }
-    &.-large { font-size: 32px; }
+    &.-small { font-size: 28px; }
+    &.-medium { font-size: 32px; }
+    &.-large { font-size: 36px; }
     &.-grand { font-size: 48px; }
     &.-giant { font-size: 64px; }
     

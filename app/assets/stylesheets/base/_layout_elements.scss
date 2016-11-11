@@ -26,10 +26,18 @@ section {
     
     &.-family {
         background-image: image-url( 'family.jpg' );
+        
+        @media ( max-width: $media-mobile-max ) {
+            background-image: image-url( 'family-mobile.jpg' );
+        }
     }
     
     &.-seniors {
         background-image: image-url( 'seniors.jpeg' );
+        
+        @media ( max-width: $media-mobile-max ) {
+            background-image: image-url( 'seniors-mobile.jpg' );
+        }
     }
 }
 
@@ -95,9 +103,10 @@ section {
     margin-bottom: 0;
 }
 
-.map-container {
-    height: 30em;
-    width: 100%;
+.mobile-padded {
+    @media ( max-width: $media-mobile-max ) {
+        padding-bottom: 5em;
+    }
 }
 
 .page-content {
