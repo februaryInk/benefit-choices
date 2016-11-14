@@ -68,6 +68,8 @@ GEM
       haml (>= 4.0.6, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
+    heroku-deflater (0.6.2)
+      rack (>= 1.4.5)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
@@ -191,6 +193,7 @@ DEPENDENCIES
   dotenv-rails
   font-awesome-rails
   haml-rails (~> 0.9)
+  heroku-deflater
   jquery-rails
   listen (~> 3.0.5)
   normalize-rails

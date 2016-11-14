@@ -55,6 +55,9 @@ group :development do
 end
 
 group :production do
+  # Compress assets on Heroku.
+  gem 'heroku-deflater'
+  
   # Use Puma as the web server for Heroku.
   gem 'puma'
 

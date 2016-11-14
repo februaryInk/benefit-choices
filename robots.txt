@@ -1,2 +1,2 @@
-Sitemap: http://benefitchoices.biz/sitemap.xml
+Sitemap: http://www.benefitchoices.biz/sitemap.xml
 User-Agent: *
