@@ -22,35 +22,42 @@
         %h2.centered.heading.-medium.margin-b0.t-white
           The Four Parts of Medicare
   %section
-    .grid-container
-      .grid-25
-        %h3.centered.t-grand
+    .grid-container.centered
+      .grid-25.mobile-padded
+        %h3.heading.-small
           Part A
-        %h4.centered.t-large
+        %h4.t-large
           Hospital Insurance
         %p
           Part A helps pay for inpatient care in a hospital, or skilled nursing facility following a hospital stay. It also pays for some home health care, and hospice care.
-      .grid-25
-        %h3.centered.t-grand
+      .grid-25.mobile-padded
+        %h3.heading.-small
           Part B
-        %h4.centered.t-large
+        %h4.t-large
           Medical Insurance
         %p
           Part B helps pay for services from doctors and other health care providers, outpatient care, home health care, durable medical equipment, and some preventive services.
-      .grid-25
-        %h3.centered.t-grand
+      .grid-25.mobile-padded
+        %h3.heading.-small
           Part C
-        %h4.centered.t-large
+        %h4.t-large
           Advantage Plans
         %p
           Part C plans are available in many areas. People with Medicare Parts A and B can choose to receive all their health care services through a private insurance company approved by Medicare to provide this coverage.
       .grid-25
-        %h3.centered.t-grand
+        %h3.heading.-small
           Part D
-        %h4.centered.t-large
+        %h4.t-large
           Prescription Drug Coverage
         %p
           Part D helps cover the cost of prescription drugs.
+  %section.blue-herring
+    .grid-container
+      .grid-100
+        %h2.heading.-large
+          Do you need a Medigap plan?
+        %p
+          Medigap plans are private insurance policies designed to supplement Medicare and pick up the health care expenses that Medicare doesn't cover. We can help you be better protected against being left with unexpected fees by arranging a suitable Medigap plan if you are interested.
   %section.color.-dark-cerulean.padding-bt1
     .grid-container
       .grid-100
@@ -58,11 +65,11 @@
           Our Partners in Providing Medicare Coverage
   %section
     .grid-container
-      .grid-30
+      .grid-30.mobile-padded
         = image_tag asset_url( 'priority-health-logo.png' ), :alt => 'Priority Health logo', :class => 'full-width'
       .grid-5
         %br
-      .grid-30
+      .grid-30.mobile-padded
         = image_tag asset_url( 'blue-cross-blue-shield-logo.png' ), :alt => 'Priority Health logo', :class => 'full-width'
       .grid-5
         %br

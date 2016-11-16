@@ -1,5 +1,5 @@
 .page-content
-  %section.banner.-family
+  %section.banner.-community
     .grid-container
       .grid-40
         .color.-translucent-white.padding-1
@@ -12,10 +12,10 @@
     .grid-container
       .centered.grid-100
         %h2.heading.-medium
-          Are you ready to sign up for Medi-Share?
+          How much is Medi-Share?
         %p
-          It's easy to begin the registration process.
-        = link_to 'Register for Medi-Share', medi_share_registration_url, :class => 'button -bright -large', :target => '_blank'
+          Use the cost calculator to calculate your monthly portion. If you so choose, you can continue with the registration process from there.
+        = link_to 'Calculate Your Medi-Share Cost', medi_share_registration_url, :class => 'button -bright -large', :target => '_blank'
   %section.blue-herring
     .grid-container
       .grid-100
@@ -40,6 +40,14 @@
                 = faq.question
             .expandable__hidden.js-expandable-hidden
               = simple_format( faq.answer )
+  %section
+    .grid-container
+      .centered.grid-100
+        %h2.heading.-medium
+          Are you ready to sign up for Medi-Share?
+        %p
+          It's easy to begin the registration process.
+        = link_to 'Register for Medi-Share', medi_share_registration_url, :class => 'button -bright -large', :target => '_blank'
   %section.blue-herring
     .grid-container
       .grid-100
