@@ -20,21 +20,23 @@
         .header__slogan
           %h2.heading.-small.margin-b0
             When the sale ends, the service begins.
-        %nav.header__nav
-          %ul
-            %li
-              = link_to root_path, class: 'header__link js-openable-link' do
-                %span
-                  Home
-            %li
-              = link_to medicare_path, class: 'header__link js-openable-link' do
-                %span
-                  Medicare
-            %li
-              = link_to medi_share_path, class: 'header__link js-openable-link' do
-                %span
-                  Medi-Share
-            %li
-              = link_to new_email_path, class: 'header__link js-openable-link' do
-                %span
-                  Contact Us
+        .header__nav__toggle
+          %span.header__nav__link.js-nav-toggle{ 'data-target' => '.header__nav__links' }
+            %span.fa.fa-bars
+        %ul.header__nav__links
+          %li
+            = link_to root_path, class: 'header__nav__link js-openable-link' do
+              %span
+                Home
+          %li
+            = link_to medicare_path, class: 'header__nav__link js-openable-link' do
+              %span
+                Medicare
+          %li
+            = link_to medi_share_path, class: 'header__nav__link js-openable-link' do
+              %span
+                Medi-Share
+          %li
+            = link_to new_email_path, class: 'header__nav__link js-openable-link' do
+              %span
+                Contact Us
