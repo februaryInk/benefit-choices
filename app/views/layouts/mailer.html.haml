@@ -9,7 +9,11 @@
             %tbody
               %tr
                 %td
-                  = image_tag 'logo.png', alt: 'Benefit Choices logo', class: 'logo', height: '100', width: '100'
+                  .blue.panel
+                  = mailer_image_tag 'logo.png', alt: 'Benefit Choices logo', class: 'logo', height: '100', width: '100'
+                  %h1.centered
+                    Benefit Choices
+                  .blue.panel
           %table.container
             %tbody
               %tr
@@ -19,5 +23,5 @@
             %tbody
               %tr
                 %td
-                  %p.license
+                  %p.blue.license
                     = "Copyright #{Time.now.year} Benefit Choices. All Rights Reserved.".html_safe

@@ -72,7 +72,7 @@ Rails.application.configure do
   # immediate delivery.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'benefitchoices.herokuapp.com', protocol: 'http' }
+  config.action_mailer.default_url_options = { host: ENV[ 'HOST' ], protocol: 'http' }
   config.action_mailer.perform_caching = false
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
@@ -80,9 +80,9 @@ Rails.application.configure do
     authentication:       :plain,
     domain:               'heroku.com',
     enable_starttls_auto: true,
-    password:             ENV['SENDGRID_PASSWORD'],
+    password:             ENV[ 'SENDGRID_PASSWORD' ],
     port:                 587,
-    user_name:            ENV['SENDGRID_USERNAME']
+    user_name:            ENV[ 'SENDGRID_USERNAME' ]
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
