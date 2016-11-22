@@ -21,6 +21,11 @@ module ApplicationHelper
     'https://www.htfshare.com/#/00531000007wbDqAAI'
   end
   
+  # Medi-Share provider search URL.
+  def medi_share_providers_url
+    'https://www.multiplan.com/search/search-2.cfm?originator=84499'
+  end
+  
   # Agent Medi-Share registration URL.
   def medi_share_registration_url
     'https://www.htfshare.com/#/00531000007wbDqAAI/apply'

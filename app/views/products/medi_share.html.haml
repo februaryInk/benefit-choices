@@ -40,6 +40,14 @@
                 = faq.question
             .expandable__hidden.js-expandable-hidden
               = simple_format( faq.answer )
+  %section.blue-herring
+    .grid-container
+      .grid-100
+        %h2.heading.-medium
+          Medi-Share Providers
+        %p
+          Medi-Share has over 700,000 providers nationwide. You can search the Medi-Share provider database to see which providers are available near you.
+        = link_to 'Search Medi-Share Providers', medi_share_providers_url, :class => 'button -dark -large', :target => '_blank'
   %section
     .grid-container
       .centered.grid-100
