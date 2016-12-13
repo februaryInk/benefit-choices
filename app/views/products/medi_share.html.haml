@@ -46,7 +46,7 @@
         %h2.heading.-medium
           Medi-Share Providers
         %p
-          Medi-Share has over 700,000 providers nationwide. You can search the Medi-Share provider database to see which providers are available near you.
+          Medi-Share has over 700,000 providers nationwide of varying disciplines. You can search the Medi-Share provider database to see which providers are available near you.
         = link_to 'Search Medi-Share Providers', medi_share_providers_url, :class => 'button -dark -large', :target => '_blank'
   %section
     .grid-container
@@ -61,6 +61,21 @@
       .grid-100
         %p.t-small
           Medi-Share is not insurance or an insurance policy, nor is it offered through an insurance company. Whether anyone chooses to assist you with your medical bills will be totally voluntary, as no other member will be compelled by law to contribute toward your medical bills. As such, Medi-Share should never be considered to be insurance. Whether you receive any payments for medical expenses and whether or not Medi-Share continues to operate, you are always personally responsible for the payment of your own medical bills. Medi-Share is not subject to the regulatory requirements or consumer protections of your particular state’s Insurance Code or Statutes.
+  %section
+    .centered.grid-container
+      .grid-100
+        %p.heading.-medium
+          More Information
+      .grid-50.mobile-padded
+        = link_to 'files/medi-share-sharing-summary.pdf', :class => 'button -dark -inverse -large', :target => '_blank' do
+          %span.fa.fa-file
+          %span
+            Medi-Share Sharing Summary
+      .grid-50
+        = link_to 'files/medi-share-guidelines.pdf', :class => 'button -dark -inverse -large', :target => '_blank' do
+          %span.fa.fa-file
+          %span
+            Medi-Share Guidelines
   %section
     .grid-container
       .grid-100.centered
