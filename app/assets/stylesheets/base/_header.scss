@@ -56,10 +56,18 @@ header {
     
     @media ( max-width: $media-mobile-max ) {
         clear: both;
-        display: none;
+        height: 0;
         float: none;
-        padding-top: 0.5em;
+        overflow: hidden;
+        padding-top: 0;
+        transition: all 0.5s ease-out;
         width: 100%;
+        
+        &.-open {
+            height: auto;
+            padding-top: 0.5em;
+            transition: all 0.5s ease-out;
+        }
         
         li {
             float: none;

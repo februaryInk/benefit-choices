@@ -33,7 +33,7 @@
     .grid-container
       .grid-100
         - @faqs.each do | faq |
-          .expandable.js-expandable
+          .expandable.js-expandable{ :id => "faq#{faq.id}" }
             .expandable__shown
               %h3.expandable__title
                 %span.fa.fa-caret-right.expandable__arrow.js-expandable-arrow

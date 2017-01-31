@@ -21,9 +21,9 @@
           %h2.heading.-small.margin-b0
             When the sale ends, the service begins.
         .header__nav__toggle
-          %span.header__nav__link.js-nav-toggle{ 'data-target' => '.header__nav__links' }
+          %span.header__nav__link.js-nav-toggle{ 'data-target' => 'nav-links' }
             %span.fa.fa-bars
-        %ul.header__nav__links
+        %ul#nav-links.header__nav__links
           %li
             = link_to root_path, class: 'header__nav__link js-openable-link' do
               %span

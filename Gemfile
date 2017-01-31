@@ -12,9 +12,6 @@ gem 'font-awesome-rails'
 # Use HAML markup.
 gem 'haml-rails', '~> 0.9'
 
-# Use the JavaScript library jQuery.
-gem 'jquery-rails'
-
 # Use normalize.css to standardize how browsers render elements.
 gem 'normalize-rails'
 

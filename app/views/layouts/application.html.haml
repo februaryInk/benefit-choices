@@ -18,6 +18,7 @@
       = yield( :flash_bar ) if content_for?( :flash_bar )
       = yield
     = yield( :footer ) if content_for?( :footer )
+    = yield( :javascript ) if content_for?( :javascript )
     -# console if Rails.env.development?
     %script
       :plain

@@ -89,12 +89,18 @@ section {
             transform: rotate( 90deg );
             transition: all 0.25s ease-out;
         }
+        
+        .expandable__hidden {
+            height: auto;
+            padding: 1em;
+            transition: all 0.5s ease-out;
+        }
     }
 }
 
 .expandable__arrow {
     transform: rotate( 0deg );
-    transition: all 0.25s ease-out;
+    transition: all 0.35s ease-out;
     
     display: inline-block;
     margin-right: 1em;
@@ -103,8 +109,10 @@ section {
 }
 
 .expandable__hidden {
-    display: none;
-    padding: 1em;
+    height: 0;
+    overflow: hidden;
+    padding: 0 1em;
+    transition: all 0.5s ease-out;
     
     p {
         font-size: 1em;
