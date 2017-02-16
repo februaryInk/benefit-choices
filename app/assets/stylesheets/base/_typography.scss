@@ -80,6 +80,8 @@ em, i { font-style: italic; }
     text-transform: uppercase;
 }
 
+.t-blue { color: $dark-cerulean; }
+.t-orange { color: $tawny; }
 .t-white { color: $white; }
 
 a, span { &.underlined { text-decoration: underline; } }

@@ -8,8 +8,9 @@
               %td.padding-r1
                 = image_tag asset_url( 'logo.png' ), :alt => 'Benefit Choices logo', :class => 'logo -small'
               %td
-                %h1.heading.-grand.-signature.margin-b0
-                  Benefit Choices
+                = link_to root_path, :class => 't-blue' do
+                  %h1.heading.-grand.-signature.margin-b0
+                    Benefit Choices
         .header__phone
           %span.fa.fa-phone
           %span

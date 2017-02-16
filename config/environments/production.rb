@@ -10,9 +10,8 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
-  # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
-  config.action_controller.perform_caching = true
+  # Full error reports are disabled.
+  config.consider_all_requests_local = false
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -31,6 +30,11 @@ Rails.application.configure do
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
   
   config.public_file_server.enabled = true
+  
+  # Handle browser caching.
+  config.action_controller.perform_caching = true
+  config.action_mailer.perform_caching = false
+  config.cache_store = :memory_store
   config.public_file_server.headers = { 
     'Cache-Control' => 'public, maxage=604800',
     'Expires' => "#{1.month.from_now.to_formatted_s( :rfc822 )}"
@@ -58,9 +62,6 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 
-  # Use a different cache store in production.
-  # config.cache_store = :mem_cache_store
-
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "benefit_choices_#{Rails.env}"
@@ -73,7 +74,6 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: ENV[ 'HOST' ], protocol: 'http' }
-  config.action_mailer.perform_caching = false
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
     address:              'smtp.sendgrid.net',
